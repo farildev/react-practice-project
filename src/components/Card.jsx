@@ -1,7 +1,8 @@
 import React from 'react'
 import "../assets/styles/index.css"
 import "../assets/styles/card.css"
-function Card({key , title , description , image}) {
+
+function Card({key, title , description , image}) {
   return (
     <>
     <div className="card">
@@ -17,7 +18,7 @@ function Card({key , title , description , image}) {
                     <p>{description}</p>
                 </div>
                 <div className="card__btn">
-                    <button>Salam</button>
+                    <button>Buy Product</button>
                 </div>
             </div>
         </div>

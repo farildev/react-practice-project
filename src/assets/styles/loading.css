@@ -1,0 +1,38 @@
+.loading{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #512bd4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner {
+	--spinner-color: white;
+
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+
+	animation-name: spin;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.spinner--quarter {
+	width: 48px;
+	border: 5px solid var(--spinner-color);
+	border-top-color: transparent;
+
+	animation-duration: 1s;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
