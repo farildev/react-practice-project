@@ -20,8 +20,8 @@ function App() {
     <>
       <Header />
       {
-        data.map((index,key)=> (
-          <Card key={key} title={index.title} description={index.description} image={index.image} />
+        data.map((index)=> (
+          <Card key={index.id} title={index.title} description={index.description} image={index.image} />
         ))
       }
 
