@@ -1,15 +1,13 @@
 .card{
-    margin-top: 80px;
-    width: 100%;
+    margin-top: 50px;
     background-color: #1c1c1c;
-}
-.card__content{
-    width: 100%;
 }
 .card__body{
     background-color: #121212;
     padding: 2rem;
     border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
     -webkit-box-shadow: 0px 3px 15px -3px rgba(0,0,0,0.28);
     -moz-box-shadow: 0px 3px 15px -3px rgba(0,0,0,0.28);
     box-shadow: 0px 3px 15px -3px rgba(0,0,0,0.28);
@@ -37,6 +35,19 @@
 }
 .card__description p{
     color: #fff;
+}
+.card__lower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__price{
+    color: #fff;
+    margin: 10px 15px 0 0;
+}
+.card__price span{
+    font-size: 20px;
+    font-weight: 500;
 }
 .card__btn{
     margin-top: 15px;
